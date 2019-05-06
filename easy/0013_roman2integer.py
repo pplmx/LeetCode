@@ -1,4 +1,13 @@
-def execute(roman):
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+def roman2int(roman: str) -> int:
+    """
+        roman to integer
+    :param roman:
+    :return:
+    """
     roman_dict_common = {
         "I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000
     }
@@ -16,4 +25,4 @@ def execute(roman):
 
 
 if __name__ == '__main__':
-    print(execute("MCMXCIX"))
+    print(roman2int("MCMXCIX"))
